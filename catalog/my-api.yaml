@@ -1,0 +1,14 @@
+# catalog/my-api.yaml
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: demo-api
+  description: Example of a demo API in Backstage.
+  tags:
+    - api
+    - demo
+spec:
+  type: openapi
+  lifecycle: production
+  owner: team-demo
+  definition: ./api-specs/demo-api-openapi.yaml  # Path to your OpenAPI spec file
